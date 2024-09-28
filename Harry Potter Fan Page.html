@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE FAN PAGE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;  
+            text-decoration: underline;
+            color: #333;
+        }
+        img {
+            border: 2px solid black;
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        pre {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 20px auto;
+            max-width: 80%;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #quote {
+            margin: 20px;
+            font-style: italic;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            color: #1f1f1f;
+            padding: 20px;
+            background-color: #e0e0e0;
+            border-bottom: 2px solid #ddd;
+            margin: 0;
+        }
+
+        img {
+            border: 2px solid black;
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        pre {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 80%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            line-height: 1.6;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            background: #1f1f1f;
+            color: #ffffff;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background: #333;
+            transform: scale(1.05);
+        }
+
+        #quote {
+            margin: 20px;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        iframe {
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        /* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #1f1f1f;
+    color: #f1f1f1;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Characters Container Styles */
+#characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+/* Individual Character Box Styles */
+.character {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 0;
+    padding: 1.5rem;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.character:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Character Image Styles */
+.character img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Button Styles */
+.character button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #1f1f1f;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.character button:hover {
+    background: #333333;
+    transform: scale(1.05);
+}
+
+/* Bio Styles */
+.bio {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #1f1f1f;
+    color: #f1f1f1;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Characters Container Styles */
+#characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+/* Individual Character Box Styles */
+.character {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s, opacity 1s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Hover Effect */
+.character:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Character Image Styles */
+.character img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.character img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Button Styles */
+.character button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #1f1f1f;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.character button:hover {
+    background: #333333;
+    transform: scale(1.05);
+}
+
+/* Bio Styles */
+.bio {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>HARRY POTTER FAN PAGE</h1>
+    <pre>
+        Harry Potter is a fictional character and the protagonist of J.K. Rowling's globally acclaimed book series.
+        The story begins with Harry, an orphaned boy who lives with his unpleasant relatives, the Dursleys.
+        On his eleventh birthday, he learns that he is a wizard and receives an invitation to attend Hogwarts School of Witchcraft and Wizardry.
+        Throughout the series, Harry navigates the challenges of magical education, makes loyal friends like Hermione Granger and Ron Weasley, and confronts <br>the dark wizard <br>Voldemort, who is responsible for his parents' deaths.
+        The series blends fantasy, adventure, and themes of bravery, friendship, and the struggle between good and evil.
+    </pre>
+    <a href="Untitled-1.html" class="btn">Go to Quiz</a>
+    <div id="quote">Press the button to get a quote!</div>
+    <div class="buttons">
+        <button onclick="location.href='C:\Users\Lenovo\OneDrive - SUSTAINOMETRIC\Desktop\project2\index1.html'">HOME</button>
+
+       <button onclick="generateRandomQuote()">Get Random Quote</button>
+       <button onclick="location.href='index2.html'">CHARACTER BIO</button>
+    </div>
+    
+    <script>
+        // Array of Harry Potter quotes
+        const quotes = [
+            "It does not do to dwell on dreams and forget to live.",
+            "Happiness can be found even in the darkest of times, if one only remembers to turn on the light.",
+            "You must be the change you wish to see in the world.",
+            "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+            "The world had ended, so why had the part of him that was Harry Potter survived?",
+            "I am what I am, an’ I’m not ashamed.",
+            "To the well-organized mind, death is but the next great adventure.",
+            "Fear of a name increases fear of the thing itself.",
+            "You’re a wizard, Harry.",
+            "We are only as strong as we are united, as weak as we are divided."
+        ];
+        
+        // Function to generate a random quote
+        function generateRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const quoteElement = document.getElementById('quote');
+            quoteElement.textContent = quotes[randomIndex];
+        }
+    </script>
+
+    <!-- Example of using an online image URL for better compatibility -->
+    <img src="C:\Users\Lenovo\OneDrive - SUSTAINOMETRIC\Desktop\project2\harry-potter-movie-posters-header-1120x0-c-default.jpg" alt="Harry Potter Movie Image">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qxvhwv37yNU?si=bfMetgqM0AMzgtOG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
